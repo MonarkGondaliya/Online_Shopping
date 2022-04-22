@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: bbbdbd;" xmlns="http://javafx.com/javafx/1.8.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientController">
+   <children>
+      <Label layoutX="14.0" layoutY="1.0" prefHeight="35.0" prefWidth="127.0" text="Client View" textFill="#194321">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Button layoutX="264.0" layoutY="128.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="26.0" prefWidth="91.0" text="Add to Cart" />
+      <Button layoutX="264.0" layoutY="215.0" mnemonicParsing="false" onAction="#deleteRec" prefHeight="26.0" prefWidth="91.0" text="Remove Item" />
+      <Button layoutX="515.0" layoutY="12.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="73.0" text="Log Out" />
+      <Button layoutX="515.0" layoutY="360.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="73.0" text="Exit" />
+      <TableView fx:id="objs" layoutX="3.0" layoutY="35.0" prefHeight="359.0" prefWidth="251.0">
+        <columns>
+          <TableColumn prefWidth="90.0" text="Product Name" />
+          <TableColumn prefWidth="83.0" text="Brand" />
+            <TableColumn prefWidth="73.0" text="Price" />
+        </columns>
+      </TableView>
+      <TableView fx:id="objs1" layoutX="363.0" layoutY="48.0" prefHeight="279.0" prefWidth="225.0">
+         <columns>
+            <TableColumn prefWidth="87.0" text="Product Name" />
+            <TableColumn minWidth="0.0" prefWidth="87.0" text="Brand" />
+            <TableColumn prefWidth="49.0" text="Price" />
+         </columns>
+      </TableView>
+      <Label layoutX="364.0" layoutY="14.0" prefHeight="22.0" prefWidth="67.0" text="My Cart" textFill="#194321">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
